@@ -2,7 +2,21 @@
 #define REPASO_TRIANGULO_H
 
 
-class Triangulo {
+#include "Geometria.h"
+
+class Triangulo : public Geometria{
+private:
+    float angulo;
+    float hipotenusa;
+
+
+
+public:
+    float getSuperficie();
+    float getPerimetro();
+    void setAngulo(float angulo);
+    float getAngulo();
+
 
 };
 

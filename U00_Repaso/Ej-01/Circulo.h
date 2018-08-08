@@ -2,8 +2,16 @@
 #define REPASO_CIRCULO_H
 
 
-class Circulo {
+#include "Geometria.h"
 
+class Circulo : public Geometria {
+protected:
+    float radio;
+public:
+    float getRadio();
+    void setRadio(float radio);
+    float getSuperficie();
+    float getPerimetro();
 };
 
 
