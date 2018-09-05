@@ -1,15 +1,23 @@
 #include "Triangulo.h"
-float Triangulo ::getSuperficie() {
-    return (ancho+alto)/2;
-}
-float Triangulo ::getPerimetro() {
- return (alto *3);
-}
+#include <cmath>
 
-float Triangulo::getAngulo(){
+
+float Triangulo::getAngulo() const {
     return angulo;
 }
 
 void Triangulo::setAngulo(float angulo) {
     Triangulo::angulo = angulo;
+}
+
+
+float Triangulo::getPerimetro() {
+    float hipotenusa;
+    hipotenusa=sqrt(alto*alto+ancho*ancho);
+    return alto+ancho+hipotenusa;
+}
+
+float Triangulo::getSuperficie() {
+    return alto*ancho/2;
+
 }

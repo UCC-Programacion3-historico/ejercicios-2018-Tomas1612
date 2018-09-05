@@ -1,11 +1,17 @@
 #include "Cuadrado.h"
+#include <cmath>
 
-float Cuadrado ::getPerimetro() {
+float Cuadrado::getDiagonal() {
+    return sqrt(alto*alto+ancho*ancho);
+}
+
+
+
+float Cuadrado::getPerimetro() {
     return alto*4;
 }
-float Cuadrado ::getSuperficie() {
+
+float Cuadrado::getSuperficie() {
     return alto*alto;
 }
-float Cuadrado::getDiagonal() {
-    return sqrt(alto*alto+ancho*ancho) ;
-}
+
