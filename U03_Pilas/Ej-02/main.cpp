@@ -9,7 +9,8 @@ int comparaPilas(Pila<char> &pilaUno, Pila<char> &pilaDos) {
             iguales = 0;
         }
     }
-    return iguales;
+    if (pilaUno.esVacia() && pilaDos.esVacia())    return iguales;
+    return 0;
 }
 
 int main() {
